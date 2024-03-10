@@ -1,0 +1,72 @@
+.auth_signup{
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+
+    .signup_image{
+        background: url("../../assets/signup_bg.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+    
+    .sign_form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #ffffff;
+        padding: 2rem 12rem;
+
+        h1{
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .form_component{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 0.25rem 0;
+
+
+            .form_label{
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 0.5rem 1rem;
+            }
+
+            .form_input{
+                padding: 1rem 0.5rem;
+                font-size: 1rem;
+                font-family: 'Outfit', sans-serif;
+                border: none;
+                color: rgb(77, 77, 77);
+                background-color: #fff;
+                border-bottom: 2px solid #f1356d;
+                outline: none;
+                margin: 0.5rem 1rem;
+            }
+
+            .form_btn{
+                background-color: #f1356d;
+                color: #fff;
+                margin: 1rem 12rem;
+                padding: 1rem 0;
+                font-weight: 500;
+                font-size: 1.2rem;
+                border: none;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover{
+                    background-color: #f1356d;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+   
+}
