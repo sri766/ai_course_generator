@@ -1,10 +1,12 @@
-const require = require('mongoose')
+const moongoose = require('mongoose');
+const dotenv = require('dotenv');
 
+dotenv.config({ path: './config.env' });
 
-mongoose.connect(process.env.MONGO_URI,{
+moongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
-}).then(()=>{
-    console.log('Connected to MongoDB')
-}).then(err =>{
-    console.log("Unable to Connect due to this Error",err)
-})
+}).then(() => {
+    console.log('Connected to MongoDB');
+}).catch(err => {
+    console.log("Unable to connect due to this error:", err);
+});

@@ -1,19 +1,23 @@
-const express = require('express')
-const mongoose = require('mongoose')
-const dotenv = require('dotenv')
+const express = require('express');
 
-dotenv.config({path:'./config.env'});
+//connection db
+require('./db/connection');
+
+//import model
+const User = require('./model/User');
+const app = express();
 
 
-require('./db/connection')
+app.use(express.json());
 
+//router file linked
+app.use(require('./router/auth'))
+//Middleware
+const middleware = (req,res,next) =>{
+    console.log('Helo from MiddleWare');
+    next();
+}
 
-const app = express()
-
-app.get('/', (req, res) => {
-    res.send('Hello World')
-})
-
-app.listen(3000, () => {
-    console.log('Server is running on port 3000')
-})
+app.listen(8000, () => {
+    console.log('Server is running on port 8000');
+});

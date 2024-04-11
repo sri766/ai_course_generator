@@ -23,8 +23,6 @@ const Login = () => {
         <form className='form_component'>
           <label className='form_label'>Username</label>
           <input className='form_input' type='text' placeholder='Enter your Name' />
-          <label className='form_label'>Email</label>
-          <input className='form_input' type='email' placeholder='Enter Your Email' />
           <label className='form_label'>Password</label>
           <input className='form_input' type='password' placeholder='Enter your Password' />
           <button className='form_btn'>Login</button>

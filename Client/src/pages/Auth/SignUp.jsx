@@ -7,8 +7,9 @@ const SignUp = () => {
 
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
   const [password, setPassword] = useState('')
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
 
   const handleSubmit = (e) => {
@@ -32,13 +33,15 @@ const SignUp = () => {
           <input className='form_input' type='text' placeholder='Enter your Name' />
           <label className='form_label'>Email</label>
           <input className='form_input' type='email' placeholder='Enter Your Email' />
+          <label className='form_label'>Phone No</label>
+          <input className='form_input' type='text' placeholder='Enter your PhoneNo.'></input>
           <label className='form_label'>Password</label>
           <input className='form_input' type='password' placeholder='Enter your Password' />
           <button className='form_btn'>Sign Up</button>
         </form>
-          <span className='login_user'>
+          <div className='login_user'>
             <p onClick={()=>navigate('/Login')}>Do you already have an account?</p>
-          </span>
+          </div>
       </div>
     </div>
   )

@@ -16,7 +16,7 @@
         justify-content: center;
         height: 100vh;
         background-color: #ffffff;
-        padding: 2rem 12rem;
+        padding: 1rem 10rem;
 
         h1{
             font-size: 3rem;
@@ -47,14 +47,14 @@
                 background-color: #fff;
                 border-bottom: 2px solid #f1356d;
                 outline: none;
-                margin: 0.5rem 1rem;
+                margin: 0.12rem 1rem;
             }
 
             .form_btn{
                 background-color: #f1356d;
                 color: #fff;
                 margin: 1rem 12rem;
-                padding: 1rem 0;
+                padding: 1rem;
                 font-weight: 500;
                 font-size: 1.2rem;
                 border: none;
@@ -68,5 +68,10 @@
             }
         }
     }
-   
+    
+    .login_user{
+        p{
+            cursor: pointer;
+        }
+    }
 }
